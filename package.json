@@ -1,5 +1,5 @@
 {
-  "name": "youtube-transcript-plus",
+  "name": "@vitalyrudenko/youtube-transcript-plus",
   "version": "2.0.0",
   "description": "Fetch transcript from a YouTube video",
   "type": "module",

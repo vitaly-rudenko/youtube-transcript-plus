@@ -22,6 +22,7 @@
       "captionTracks": [
         {
           "baseUrl": "https://www.youtube.com/api/timedtext?lang=en&v=TESTVIDEOID",
+          "vssId": ".en",
           "languageCode": "en"
         }
       ]

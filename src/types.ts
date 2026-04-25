@@ -48,6 +48,8 @@ export interface TranscriptConfig {
   retryDelay?: number;
   /** AbortSignal to cancel in-flight requests. */
   signal?: AbortSignal;
+  /** YouTube's internal vssId to select a specific caption track (e.g., `'en.1615905834'`). */
+  vssId?: string;
   /** When `true`, return a {@link TranscriptResult} containing both video details and segments. */
   videoDetails?: boolean;
 }
@@ -115,6 +117,7 @@ export interface TranscriptResult {
 export interface CaptionTrack {
   baseUrl?: string;
   url?: string;
+  vssId?: string;
   languageCode: string;
   name?: { simpleText?: string };
   kind?: string;
@@ -122,6 +125,8 @@ export interface CaptionTrack {
 
 /** Information about an available caption track for a video. */
 export interface CaptionTrackInfo {
+  /** YouTube's internal vssId for the caption track (e.g., `'en'`, `'en.1615905834'`). */
+  vssId: string | undefined;
   /** BCP 47 language code (e.g., `'en'`, `'fr'`, `'pt-BR'`). */
   languageCode: string;
   /** Human-readable language name (e.g., `'English'`, `'French'`). */

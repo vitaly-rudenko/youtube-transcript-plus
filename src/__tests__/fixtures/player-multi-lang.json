@@ -5,17 +5,20 @@
       "captionTracks": [
         {
           "baseUrl": "https://www.youtube.com/api/timedtext?lang=en&v=TESTVIDEOID",
+          "vssId": ".en",
           "languageCode": "en",
           "name": { "simpleText": "English" }
         },
         {
           "baseUrl": "https://www.youtube.com/api/timedtext?lang=es&v=TESTVIDEOID",
+          "vssId": ".es.e2f08b",
           "languageCode": "es",
           "name": { "simpleText": "Spanish (auto-generated)" },
           "kind": "asr"
         },
         {
           "baseUrl": "https://www.youtube.com/api/timedtext?lang=fr&v=TESTVIDEOID",
+          "vssId": ".fr",
           "languageCode": "fr",
           "name": { "simpleText": "French" }
         }
